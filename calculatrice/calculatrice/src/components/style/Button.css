@@ -1,0 +1,22 @@
+button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+.numbers
+{
+    background-color: rgb(0, 145, 213);
+    border-color: rgb(0, 66, 97);;
+    text-align: right;
+}
+.operators
+{
+    background-color: rgb(193, 0, 0);
+    border-color: rgb(126, 0, 0);
+}
+.equal
+{
+    background-color: rgb(1, 237, 41);
+    border-color: rgb(0, 133, 22);
+}
