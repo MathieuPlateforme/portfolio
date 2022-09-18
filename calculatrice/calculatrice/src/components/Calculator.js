@@ -5,6 +5,7 @@ import './style/Calculator.css';
 import './style/Button.css';
 import OperatorButton from "./OperatorButton";
 import EqualButton from "./EqualButton";
+import History from "./History";
 var stringMath = require('string-math');
 
 function Calculator()
@@ -51,6 +52,7 @@ function Calculator()
                 <OperatorButton display={display}/>
                 <EqualButton display={display}/>
             </section>
+            <History />
             </section>
 }
 
