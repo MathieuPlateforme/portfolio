@@ -1,0 +1,399 @@
+/* 
+Random 
+*/
+
+html
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+.font1
+{
+    font-family: 'Alternitty', sans-serif;
+}
+
+.container
+{
+    margin: 0 200px;
+}
+.shadow
+{
+    padding-top: 100px;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+a
+{
+    text-decoration: none;
+}
+.anchor
+{
+    scroll-margin-top: 5rem;
+}
+.reveal
+{
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1s;
+}
+.reveal.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(199, 199, 199, 0.667);
+    border-radius: 10px;
+    height: 10px;
+
+  }
+
+/* 
+Nav 
+*/
+
+nav
+{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.637);
+    z-index: 1;
+}
+nav div
+{
+    padding: 10px;
+}
+nav div a
+{
+    padding: 0 20px;
+    color: rgb(86, 86, 86);
+    font-weight: 900;
+}
+nav div:first-of-type a
+{
+    font-size: 1.3rem;
+    color: rgb(25, 69, 145);
+    font-weight: normal;
+}
+nav div:first-of-type
+{
+    transition: 0.4s;
+}
+nav a:hover
+{
+    color: rgb(25, 69, 145);
+}
+
+/*
+Home
+*/
+
+#home
+{
+    background-image: url('../assets/wallpaper.jpg');
+    height: 110vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+#home h2
+{
+    padding-top: 250px;
+    color: white;
+    font-size: 5rem;
+}
+#home h3
+{
+    color: white;
+    font-size: 3rem;
+}
+
+#home a
+{
+    display: inline-block;
+    padding: 20px 50px;
+    color: white;
+    background-repeat: repeat-x;
+    background-position: -100% -40%;
+    background-image: url("https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871");
+    border-radius: 30px;
+    border: 5px solid #284cff;
+    display: inline-block;
+    padding: 10px 80px;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+#home a:hover
+{
+    background-position: center;
+}
+
+
+/*
+Compétences
+*/
+
+#competences
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.competence
+{
+    width: 27%;
+    text-align: center;
+    border: solid 4px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+}
+.competence:hover
+{
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.637);
+}
+
+.competence img
+{
+    width: 70px;
+    padding: 20px;
+    transform: translateZ(20px);
+}
+.competence h1
+{
+    font-size: 1.5rem;
+    margin-top: 0;
+    transform: translateZ(20px);
+}
+.competence p
+{
+    color:rgb(158, 158, 158);
+    font-size: 1rem;
+    transform: translateZ(10px);
+}
+
+/*
+Portfolio
+*/
+#portfolio
+{
+    background-image: url('../assets/wallpaper2.jpg');
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.637);
+}
+
+
+#portfolio > div
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#portfolio article
+{
+    width: 33%;
+    margin-top: 50px;
+    transition: 0.3s;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 20px;
+}
+#portfolio article:nth-of-type(1)
+{
+    background-image: url("../assets/aredis.png");
+    transition: 0.5s;
+}
+#portfolio article:nth-of-type(2)
+{
+    background-image: url("../assets/github.png");
+    transition: 0.5s;
+}
+#portfolio article:nth-of-type(1):hover
+{
+    background-image: url("../assets/aredisblur.png");
+    transition: 0.5s;
+}
+#portfolio article:nth-of-type(2):hover
+{
+    background-image: url("../assets/githubblur.png");
+    transition: 0.5s;
+}
+#portfolio article:hover a, #portfolio article:hover h2
+{
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0px);
+}
+#portfolio article div
+{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+#portfolio article:hover div
+{
+    background-color: rgba(0, 0, 0, 0.462);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+
+#portfolio .reveal a:hover
+{
+    background-position: center;
+    transition: 1s;
+
+}
+#portfolio a
+{
+    color: white;
+    background-repeat: repeat-x;
+    background-position: -100% -40%;
+    background-image: url("https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871");
+    border-radius: 30px;
+    border: 5px solid #284cff;
+    display: inline-block;
+    padding: 10px 80px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    transition: 0.5s;
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+}
+#portfolio h1
+{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding-top: 100px;
+}
+#portfolio h2
+{
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    position: relative;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+/*
+About
+*/
+
+#about
+{
+    height: 100vh;
+}
+/*
+Contact
+*/
+
+#contact
+{
+    height: 800px;
+    text-align: center;
+    padding-top: 50px;
+    /* background-color: rgb(8, 1, 48); */
+}
+#contact form
+{
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
+    border-radius: 50px;
+    border: solid 3px rgb(170, 170, 170);
+    padding: 20px;
+}
+#contact form input, #contact form textarea
+{
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 3px rgb(180, 180, 180) solid;
+}
+#contact form label
+{
+    width: 100px;
+    display: block;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+#contact form textarea
+{
+    height: 100px;
+}
+#contact form button
+{
+    background-color: white;
+    border-color: black;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 5px 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact h1
+{
+    font-size: 3rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.462);
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+}
+#contact img
+{
+    position: absolute;
+    display: inline;
+    width: 24px;
+    margin-left: 30px;
+    transition: 0.5s;
+    margin-top: 8px;
+    opacity: 0;
+    
+}
+#contact form button:hover img
+{
+    margin-left: 50px;
+    opacity: 1;
+}
+
+#contact form button:hover
+{
+    color: rgb(45, 211, 45);
+    border-color: rgb(45, 211, 45);
+    transition: 0.5s;
+}

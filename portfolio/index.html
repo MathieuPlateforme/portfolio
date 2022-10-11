@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/alternitty" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="card" data-tilt data-tilt-perspective="100">
+                <a class="font1" href="#home">Mathieu Ruiz</a>
+            </div>
+            <div>
+                <a href="#competences">Compétences</a>
+                <a href="#portfolio">Portfolio</a>
+                <!-- <a href="#about">À propos</a> -->
+                <a href="#contact">Me contacter</a>
+                <a href="calculatrice/build" target="_blank">Calculatrice</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="anchor" id="home">
+            <h2 class="font1">Mathieu Ruiz</h2>
+            <h3>Développeur Web Junior</h3>
+            <a href="assets/Mathieu.pdf" target="_blank">Voir mon CV</a>
+        </section>
+        <div class="shadow">
+            <section class="anchor container" id="competences">
+                <article class="competence card reveal" style="border-color:rgb(246, 124, 58); background-color: rgb(255, 247, 240);">
+                    <img src="assets/html.png" alt="html.png">
+                    <h1 style="color: rgb(246, 124, 58);">HTML</h1>
+                    <p>
+                    Maîtrise du language HTML.
+                    </p>
+                </article>
+                <article class="competence card reveal" style="border-color:rgb(58, 149, 246); background-color: rgb(240, 253, 255);">
+                    <img src="assets/css.png" alt="css.png">
+                    <h1 style="color: rgb(58, 149, 246);">CSS</h1>
+                    <p>
+                    Bonne connaissance du language CSS ainsi que son aspect responsive.
+                    </p>
+                </article>
+                <article class="competence card reveal" style="border-color:rgb(246, 236, 14); background-color: rgb(255, 255, 240);">
+                    <img src="assets/js.png" alt="js.png">
+                    <h1 style="color: rgb(246, 236, 14);">JS</h1>
+                    <p>
+                    Bases du language JS, ainsi que les bases de la librairie React sur lequel je travaille.
+                    </p>
+                </article>
+                <article class="competence card reveal" style="border-color:rgb(143, 58, 246); background-color: rgb(249, 240, 255);">
+                    <img src="assets/php.png" alt="php.png">
+                    <h1 style="color: rgb(143, 58, 246);">PHP</h1>
+                    <p>
+                    Bonne connaissance du language PHP, ainsi que les bases du framework Symfony sur lequel je travaille.
+                    </p>
+                </article>
+                <article class="competence card reveal" style="border-color:rgb(246, 58, 58); background-color: rgb(255, 240, 240);">
+                    <img src="assets/sql.png" alt="sql.png">
+                    <h1 style="color: rgb(246, 58, 58);">SQL</h1>
+                    <p>
+                    Bonne connaissance du language SQL.
+                    </p>
+                </article>
+                <article class="competence card reveal" style="border-color:rgb(49, 55, 246); background-color: rgb(240, 241, 255);">
+                    <img src="assets/wordpress.png" alt="wordpress.png">
+                    <h1 style="color: rgb(49, 55, 246);">Wordpress</h1>
+                    <p>
+                    Bonne connaissance du CMS Wordpress.
+                    </p>
+                </article>
+            </section>
+
+            <section id="portfolio">
+                <h1 class="reveal font1">Mes projets</h1>
+                <div>
+                    <article class="reveal">
+                        <div>
+                            <h2>Aredis Robinetterie</h2>
+                            <a href="https://aredis-robinetterie.com/" target="_blank">Voir</a>
+                        </div>
+                    </article>
+                    <article class="reveal">
+                        <div>
+                            <h2>Mon Github</h2>
+                            <a href="https://github.com/MathieuPlateforme" target="_blank">Voir</a>
+                        </div> 
+                    </article>
+                </div>
+            </section>
+
+            <!-- <section id="about">
+                <article>
+                </article>
+            </section> -->
+
+            <section id="contact" class="reveal">
+                <form action="https://formsubmit.co/mathieu.ruiz@laplateforme.io" method="POST">
+                    <h1 class="font1">Me contacter :</h1>
+                    <div>
+                        <label>Nom :</label>
+                        <input type="text" name="nom" required>
+                    </div>
+                    <div>
+                        <label>Prénom :</label>
+                        <input type="text" name="prenom" required>
+                    </div>
+                    <div>
+                        <label>Email :</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea name="message" required></textarea>
+                    </div>  
+                    <input type="hidden" name="_next" value="https://mathieu-ruiz.students-laplateforme.io/index.html#contact">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Merci pour votre message, je vous re-contacte d'ici peu.">
+                    <div>
+                        <button type="submit">Envoyer <img src="assets/right-arrow.png" alt="right-arrow"></button>
+                    </div>
+               </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="vendor/js/tilt.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
